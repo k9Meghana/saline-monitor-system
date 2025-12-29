@@ -1,84 +1,69 @@
-# Morse code Translator
+# 💧 Saline Level Monitoring System
 
-## What is Morse code?
-    
-    Morse code is a method of encoding letters, numbers and symbols into sequences of dashes(-) and dots(.).
-Each character in Morse has unique pattern of dots and dashes.
+## 📌 Project Description
+We developed the **Saline Level Monitoring System** to automatically monitor the saline fluid level in IV bottles and alert medical staff when the saline reaches a critical level. In hospitals, nurses often need to manually check saline bottles, which can be inefficient and risky. Our system helps reduce this workload and improves patient safety by providing timely alerts.
 
-## Why Morse code?
-    
-    It was developed by Samuel Morse and **Alfred vail** in 1830's for telegraph system.
-Before phones and internet,people are used to sned over long distances using ***Electric signals*** through wires.
+---
 
-## What is Morse code translator?
-    
-    A Morse code translator is device that converts or decodes messages between morse code to text and vice versa.
-* Morse code can be transmitted using 
-- Sound
-- lights 
-- taps
-- Electric power
+## 🎯 Problem Statement
+In many healthcare environments, saline bottles are monitored manually. If a saline bottle becomes empty without notice, air may enter the patient’s bloodstream, causing serious health risks. This project addresses that issue by continuously tracking the saline level and generating alerts when required.
 
-# Uses of Morse code Today:
+---
 
-## Emergency Communicaton:
+## 🛠️ Hardware Components Used
+- Arduino Uno  
+- Ultrasonic Sensor (HC-SR04)  
+- 16×2 LCD Display  
+- Buzzer  
+- LED  
+- Connecting wires  
+- Power supply  
 
-* It can be sent with *fash lights*, *whistles* ,*tapping* when voice is not possible.
-* sos = ... --- ...  is universal distress signal.
-* sms = ... -- ... 
-* Underwater communication (Example: Via sonar)
+---
 
-## Accessibility:
- 
-* people with disabilities can use blink detection, switches, or tapping to communicate.
-* Then the detected data is sent to Morse Translators that converts their input to readabe message.
+## ⚙️ Working Principle
+The ultrasonic sensor is mounted above the saline bottle to measure the distance between the sensor and the liquid surface. As the saline level decreases, the distance measured by the sensor increases.
 
-## Amateur Radio (Ham radio) Communication:
+- When the saline level is sufficient, the LCD displays **“Saline Level OK”**.
+- When the level drops below a predefined threshold, the system activates the **buzzer and LED**.
+- When the saline bottle becomes almost empty, the LCD displays **“Saline Empty – Replace Bottle”**.
 
-* Morse code is popular among Ham Radio operators because 
-- It requires less bandwidth
-- so, it can travel long distances with less power.
+The entire process runs continuously and provides real-time monitoring.
 
-## Military and Aviation uses:
+---
 
-* It is used for signalling in military, aerospace, and aviation fields when other methods fails.
+## 📊 Features
+- Continuous real-time saline level monitoring  
+- Audible and visual alert system  
+- Easy-to-use and low-cost design  
+- Reduces manual monitoring effort  
+- Enhances patient safety  
 
-* These morse code translators are essential for decoding these signals in real time.
+---
 
+## 🏥 Applications
+- Hospitals and clinics  
+- Intensive Care Units (ICUs)  
+- Home healthcare monitoring systems  
 
-## project Components:
+---
 
-* Arduino uno
-* Lcd display
-* Push buttons
-* Led light
-* Resistors
-* jumper cables
+## 🚀 Future Enhancements
+- Integration with IoT modules for remote monitoring  
+- Mobile app or web dashboard alerts  
+- Automatic saline flow control  
+- Centralized monitoring for multiple patients  
 
-
-## program code:
- 
- * In this project, I have used 3 methods to convert Morse code to text.
- * I have given tapping input through  a push button and diplayed the entered morse code and converted output in lcd display.
- * Similarly, I have given blink input through another push button and diplayed the output
- * text input is given through serial Monitor and the output is displayed in lcd.
-
- ## Conclusion:
-Morse code, despite being one of the oldest forms of Digital communication, contiues to prove its relevences in modern times and to its simplicity,reliability and versatality.
-
-A morse code translator showcases how the classic communication system can be integrated with modern technology using microcontrollers like Arduino, Raspberry pi and etc...
-
-This translator bridges the gap between old communication methods and new-age innovation ,making all it as a valuable tool for education and Real world problem-solving.
+---
 
 
-## Tinkercad link:
-     
-    https://www.tinkercad.com/things/jzXDAyYaSOG-morse-code-translator
+---
 
-## Thank you...!
+## ✅ Conclusion
+This project successfully demonstrates an efficient and reliable method for monitoring saline levels automatically. By reducing manual supervision and providing timely alerts, the Saline Level Monitoring System can significantly improve healthcare efficiency and patient safety.
 
+---
 
-
-
-
+## tinkercad link:
+***https://www.tinkercad.com/things/7AmgKKkxKTH-smart-saline-monitoring-system***
 
